@@ -1,6 +1,9 @@
 export default function handler(req, res) {
   res.status(200).json({ hello: "world" });
 }
+// export default function handler(req, res) {
+//   res.status(200).json({ hello: "world" });
+// }
 
 // export default async (req, res) => {
 //     try {
