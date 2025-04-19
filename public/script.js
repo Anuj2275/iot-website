@@ -2,7 +2,7 @@ let lastUpdateTimestamp = 0;
 
 async function updateData() {
     try {
-        const response = await fetch('./api/latest');
+        const response = await fetch('/api/latest');
         const data = await response.json();
         
         if (data.timestamp > lastUpdateTimestamp) {
