@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 420px;
+    margin: 60px auto 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #22223b;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.data-box {
+    background: rgba(255,255,255,0.98);
+    padding: 2.5rem 2rem 2rem 2rem;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.12);
+    margin: 20px 0;
+    transition: box-shadow 0.2s;
+}
+
+.data-box:hover {
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.18);
+}
+
+.sensor {
+    margin: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 8px;
+}
+
+.sensor:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-size: 1.1rem;
+    color: #4b4b6a;
+    letter-spacing: 0.5px;
+}
+
+.value {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #0077b6;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.06);
+    transition: color 0.2s;
+}
+
+.value:hover {
+    color: #00b4d8;
+}
+
+.error {
+    background: linear-gradient(90deg, #ffdde1 0%, #ee9ca7 100%);
+    color: #b22234;
+    padding: 1.2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 500;
+    box-shadow: 0 2px 12px 0 rgba(255, 105, 97, 0.08);
+    border: 1px solid #ffb3b3;
+    animation: shake 0.4s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0);}
+    20% { transform: translateX(-5px);}
+    40% { transform: translateX(5px);}
+    60% { transform: translateX(-5px);}
+    80% { transform: translateX(5px);}
+    100% { transform: translateX(0);}
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        max-width: 98vw;
+        padding: 0 4vw;
+    }
+    .data-box {
+        padding: 1.2rem 1rem 1rem 1rem;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    .value {
+        font-size: 1.5rem;
+    }
+}

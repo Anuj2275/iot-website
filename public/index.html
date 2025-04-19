@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IoT Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sensor Data</h1>
+        <div class="data-box">
+            <div class="sensor">
+                <span class="label">Temperature</span>
+                <span id="temp" class="value">--°C</span>
+            </div>
+            <div class="sensor">
+                <span class="label">Humidity</span>
+                <span id="hum" class="value">--%</span>
+            </div>
+        </div>
+        <div id="error" class="error hidden">
+            <h2>⚠️ No Data Received</h2>
+            <p>Last update: <span id="lastUpdate">Never</span></p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
